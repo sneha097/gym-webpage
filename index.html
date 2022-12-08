@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fitness</title>
+</head>
+<link href="https://fonts.google.com/specimen/Ubuntu?query=ub" rel="stylesheet">
+<link rel="stylesheet" href="cssstyle.css">
+<style>
+ /* Reseting CSS */
+ body{
+    font-family: 'Ubuntu',cursive;
+    margin: 16px;
+    padding: 0px;
+     background: url('img/bg.png.png');
+    color:white;
+}
+.left{
+    display: inline-block;
+     /* border: 2px solid pink; */
+     position: absolute;
+    left: 60px;
+    top: 2opx;
+}
+.left img{
+    width: 200px;
+
+}
+.left div{
+    text-align: center;
+    line-height: 12px;
+    font-size: 26px;
+}
+.right{
+    position: absolute;
+    right: 34px;
+    top: 48px;
+    display: inline-block;
+     /* border: 2px solid green; */
+
+}
+.mid{
+    display: block;
+    width: 60%;
+    margin: 35px auto;
+     /* border: 2px solid brown; */
+}
+.navbar{
+  display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 25px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+.navbar li a:hover, .navbar li a.active{
+    color:grey;
+    text-decoration: underline;
+    padding: 34px 23px;
+}
+.btn{
+    font-family: 'Ubuntu',cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(32, 26, 26);
+}
+.container{
+    border: 1px solid white;
+    margin: 200px 100px;
+    padding: 80px 90px ;
+    width: 33%;
+    border-radius: 25px;
+}
+.form-group input{
+    text-align: center;
+    display: block;
+    width: 500px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px ;
+    border-radius: 8px;
+    font-family: 'Ubuntu',cursive;
+}
+.container-group h1{
+text-align: center;
+}
+.container-group button{
+    display: block;
+    width: 20%;
+    margin: 20px auto;
+}
+</style>
+<body>
+   <header class="header">
+    <!-- Left box for logo -->
+    <div class="left">
+<img src="img/gym.bg.jpg" alt="My Gym">
+     <div>My Fitness</div>
+    </div>
+         <!-- Right box for buttons -->
+         <div class="right">
+<button class="btn">Call Us Now</button>
+<button class="btn">Email Us</button>
+         </div>
+         <!-- Mid box for navbar -->
+         <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+         </div>
+   </header>
+    <div class="container">
+        <h1>Join the best gym of Jaipur now.</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div> 
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
